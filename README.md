@@ -27,10 +27,28 @@ The scoring logic is **deterministic** and configurable (JSON format), providing
 - **API Keys for Multi-Tenancy**: Ensures tenant isolation by using API keys for each organization.
 - **RESTful APIs**: Exposes endpoints for scoring events and retrieving scores.
 
+
+## Example Use Case:
+
+Let's say you’re building a risk scoring engine for financial events:
+
+An event could be something like a loan application, transaction, or insurance claim.
+
+The scoring engine applies a set of business rules like:
+
+If the applicant's credit score is below 650, score = 30% (low score).
+
+If the transaction is in a high-risk region, score = 60% (medium score).
+
+If the claim exceeds a certain threshold, score = 80% (high score).
+
+The confidence level would indicate how certain the system is about its decision, and the explanations would provide insights into why a score was given, such as:
+
+"This loan application received a low score due to the applicant's credit score being below 650."
+
 ---
 
 ## **Requirements**
-
 ### **1. Core Functionality**
 - **POST /events/score**:
   - Accept structured event data (e.g., event name, category, amount).
