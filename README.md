@@ -1,9 +1,9 @@
 # **Rules-Based Scoring Engine (Java)**
-Client Project 
+Client Project - Building a risk scoring engine for financial events
 
 ## **Project Overview**
 
-This is a **client-specific project** developed for [Client Name/Industry] that provides a **rules-based scoring engine** designed to evaluate structured business events in real-time. The system returns:
+This is a **client-specific project** developed  that provides a **rules-based scoring engine** designed to evaluate structured business events in real-time for financial events. The system returns:
 - A **calculated percentage score**
 - A **confidence level**
 - **Explainability** (reasons & flags)
@@ -30,21 +30,16 @@ The scoring logic is **deterministic** and configurable (JSON format), providing
 
 ## Example Use Case:
 
-Let's say you’re building a risk scoring engine for financial events:
-
-An event could be something like a loan application, transaction, or insurance claim.
-
-The scoring engine applies a set of business rules like:
-
-If the applicant's credit score is below 650, score = 30% (low score).
-
-If the transaction is in a high-risk region, score = 60% (medium score).
-
-If the claim exceeds a certain threshold, score = 80% (high score).
+Building a risk scoring engine for financial events:
+- An event could be something like a loan application, transaction, or insurance claim.
+- The scoring engine applies a set of business rules like:
+  - If the applicant's credit score is below 650, score = 30% (low score).
+  - If the transaction is in a high-risk region, score = 60% (medium score).
+  - If the claim exceeds a certain threshold, score = 80% (high score).
 
 The confidence level would indicate how certain the system is about its decision, and the explanations would provide insights into why a score was given, such as:
 
-"This loan application received a low score due to the applicant's credit score being below 650."
+- "This loan application received a low score due to the applicant's credit score being below 650."
 
 ---
 
